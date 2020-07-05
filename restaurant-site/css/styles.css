@@ -1,0 +1,48 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: maroon;
+}
+
+.logo-img {
+    width:100px;
+    height:100px;
+    margin: 2px 15px 2px 0;
+}
+
+.header {
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.logo, .actions {
+    /* display: inline-block; */
+}
+
+.actions {
+    /* position: absolute;
+    top: 3rem;
+    right: 3rem; */
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+}
+.actions a {
+    margin-right: 0.5rem;
+}
+
+.small-menu > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+@media (max-width: 500px) {
+    .actions {
+        display: none;
+    }
+}
