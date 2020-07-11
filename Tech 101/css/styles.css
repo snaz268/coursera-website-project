@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    margin:0;
+    padding:0;
+}
+
+.header {
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(8, 8, 129);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+#logo {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1.5rem; 
+}
+
+.actions {
+    margin-top: 1.8rem;
+}
+
+.actions > a{
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.actions a:hover, a:active {
+    opacity: 0.8;
+}
+
+.menu {
+    visibility: hidden;
+    position: absolute;
+    top: 1.4rem;
+    right:1rem;
+}
+
+.menu > div {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    
+}
+.jumbotron {
+    display: inline-block;
+    border: 1px solid teal;
+    overflow: hidden;
+}
+
+.container-item {
+    border: 1px solid teal;  
+    overflow: hidden;
+}
+
+.row{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (min-width: 992px){
+    .jumbotron{
+        width: 80vw;
+        height: 40vw;
+    }
+
+    .container-item {
+        height: 300px;    
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 991px){
+    .jumbotron{
+        width: 80vw;
+        height: 50vw;
+    }
+}
+@media (max-width: 600px){
+    .jumbotron{
+        width: 80vw;
+        height: 50vw;
+    }
+
+    .actions > a {
+        visibility: hidden;
+    }
+
+    .menu {
+        visibility: visible;
+    }
+}
